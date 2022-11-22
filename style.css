@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+body{
+  overflow-x: hidden;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -64,6 +67,11 @@ header {
   text-align: center;
   margin-right: 25rem;
 }
+.search-container1 {
+  float: right;
+  text-align: center;
+  margin-right: 25rem;
+}
 
 input {
   padding: 6px;
@@ -74,12 +82,16 @@ input {
   padding: 1.5rem 0;
 }
 .search-container button {
+  margin-right: 16px;
+}
+
+.search-container button,
+.search-container1 button {
+  margin-top: 8px;
   float: right;
   padding: 1.03rem 0.83rem;
   font-size: 25px;
   color: white;
-  margin-top: 8px;
-  margin-right: 16px;
   width: 15rem;
   border: none;
   cursor: pointer;
@@ -152,148 +164,81 @@ input {
   height: 25rem;
 }
 .faq-section {
-  height: 1000px;
+  height: 900px;
 }
 #faq {
-  max-width: 700px;
-  margin: auto;
-  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 20rem;
+
+  color: #fff;
+}
+.Faq-heading {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 55px;
+  margin-bottom: 3rem;
+  margin-left: 6rem;
+}
+.faq-textend {
   text-align: center;
+  width: 100vw;
+  
+  color: white;
+  margin-top: 26px;
 }
 
-section.faq {
-  padding-top: 2em;
-  padding-bottom: 3em;
+.faq-input {
+  display: none;
 }
-
-#faq ul {
-  text-align: left;
-}
-.transition,
-p,
-ul li i:before,
-ul li i:after {
-  transition: all 0.3s;
-}
-
-#faq .no-select,
-#faq h2 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  user-select: none;
-}
-
-#faq h1 {
-  color: #000;
-  margin-bottom: 30px;
-  margin-top: 0;
-}
-
-#faq h2 {
-  color: #cc071e;
-  font-family: "hm_light", sans-serif;
-  font-size: 20px;
-  line-height: 34px;
-  text-align: left;
-  padding: 15px 15px 0;
-  text-transform: none;
-  font-weight: 300;
-  letter-spacing: 1px;
+.faq-label {
   display: block;
-  margin: 0;
+  /* padding: 8px 22px; */
+  margin: 0 0 1px 0;
   cursor: pointer;
-  transition: 0.2s;
-}
-
-#faq p {
-  color: #333;
-  text-align: left;
-  font-family: "hm_light", sans-serif;
-  font-size: 14px;
-  line-height: 1.45;
+  background: #303030;
+  border-radius: 3px;
+  color: #fff;
+  transition: ease 0.5s;
   position: relative;
-  overflow: hidden;
-  max-height: 250px;
-  will-change: max-height;
-  contain: layout;
-  display: inline-block;
-  opacity: 1;
-  transform: translate(0, 0);
-  margin-top: 5px;
-  margin-bottom: 15px;
-  padding: 0 50px 0 15px;
-  transition: 0.3s opacity, 0.6s max-height;
-  hyphens: auto;
-  z-index: 2;
+  height: 76px;
+  width: 815px;
+  text-align: justify;
+  font-size: 26px;
+
+  padding: 21px 50px 21px 31px;
+}
+.faq-label::after {
+  content: "+";
+  font-size: 45px;
+  /* font-weight: 100; */
+  position: absolute;
+  right: 10px;
+  top: 2px;
+}
+.faq-input:checked + .faq-label::after {
+  content: "x";
+  right: 14px;
+  top: 3px;
+}
+.content {
+  width: 815px;
+  background: #303030;
+  padding: 10px 25px;
+  border: 1px solid #303030;
+  margin: 0 0 5px 0;
+  border-radius: 3px;
+  color: white;
+  text-align: justify;
 }
 
-#faq ul {
-  list-style: none;
-  perspective: 900;
-  padding: 0;
-  margin: 0;
+.faq-input + .faq-label + .content {
+  display: none;
 }
-#faq ul li {
-  position: relative;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
 
-  background: #fff;
-  box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
-  -webkit-tap-highlight-color: transparent;
+.faq-input:checked + .faq-label + .content {
+  display: block;
 }
-#faq ul li + li {
-  margin-top: 15px;
-}
-#faq ul li:last-of-type {
-  padding-bottom: 0;
-}
-#faq ul li i {
-  position: absolute;
-  transform: translate(-6px, 0);
-  margin-top: 28px;
-  right: 15px;
-}
-#faq ul li i:before,
-ul li i:after {
-  content: "";
-  position: absolute;
-  background-color: #cc071e;
-  width: 3px;
-  height: 9px;
-}
-#faq ul li i:before {
-  transform: translate(-2px, 0) rotate(45deg);
-}
-#faq ul li i:after {
-  transform: translate(2px, 0) rotate(-45deg);
-}
-#faq ul li input[type="checkbox"] {
-  position: absolute;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  touch-action: manipulation;
-}
-#faq ul li input[type="checkbox"]:checked ~ h2 {
-  color: #000;
-}
-#faq ul li input[type="checkbox"]:checked ~ p {
-  /*margin-top: 0;*/
-  max-height: 0;
-  transition: 0.3s;
-  opacity: 0;
-  /*transform: translate(0, 50%);*/
-}
-#faq ul li input[type="checkbox"]:checked ~ i:before {
-  transform: translate(2px, 0) rotate(45deg);
-}
-#faq ul li input[type="checkbox"]:checked ~ i:after {
-  transform: translate(-2px, 0) rotate(-45deg);
-}
+
 .footer-container {
   height: 400px;
   color: #737373;
