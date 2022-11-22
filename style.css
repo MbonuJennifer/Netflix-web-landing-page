@@ -210,7 +210,6 @@ input {
 .faq-label::after {
   content: "+";
   font-size: 45px;
-  /* font-weight: 100; */
   position: absolute;
   right: 10px;
   top: 2px;
@@ -229,6 +228,7 @@ input {
   border-radius: 3px;
   color: white;
   text-align: justify;
+  font-size: 26px;
 }
 
 .faq-input + .faq-label + .content {
