@@ -27,13 +27,9 @@ header {
   height: 670px;
   width: 100%;
   text-align: center;
-  /* padding-top: 100px;
-    color: white;
-    overflow: hidden;
-    background: #C04848;  fallback for old browsers */
+  border-bottom: 8px solid #222222;
   background: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)),
     url("images/hero.jpg");
-  /* background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url("https://ik.imagekit.io/ikmedia/blog/hero-image.jpeg"); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -66,7 +62,6 @@ header {
   float: right;
   text-align: center;
   margin-right: 25rem;
-  /* padding: 6rem 0; */
 }
 
 input {
@@ -79,7 +74,7 @@ input {
 }
 .search-container button {
   float: right;
-  padding:1.03rem 0.83rem ;
+  padding: 1.03rem 0.83rem;
   font-size: 25px;
   color: white;
   margin-top: 8px;
@@ -93,8 +88,46 @@ input {
   align-items: center;
   justify-content: center;
 }
-.right-arrow-icon{
-    width: 35px;
-    height: 35px;
-    
+.right-arrow-icon {
+  width: 35px;
+  height: 35px;
+}
+.tv-section {
+  height: 445.925px;
+}
+.tv-section,
+.watch-section {
+  border-bottom: 8px solid #222222;
+  padding: 70px 45px 70px 45px;
+  background-color: black;
+  color: white;
+}
+.watch-section {
+  height: 275.8px;
+}
+.heading-tv {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 55px;
+  margin-bottom: 25px;
+}
+.heading-tv2 {
+  width: 547.037px;
+  font-size: 26px;
+  font-weight: 300;
+}
+.tv-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tv-row2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10rem;
+}
+.tv-img {
+  width: 30rem;
+  height: 20rem;
 }
