@@ -23,3 +23,78 @@
   height: 100px;
   width: 185px;
 }
+header {
+  height: 670px;
+  width: 100%;
+  text-align: center;
+  /* padding-top: 100px;
+    color: white;
+    overflow: hidden;
+    background: #C04848;  fallback for old browsers */
+  background: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)),
+    url("images/hero.jpg");
+  /* background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url("https://ik.imagekit.io/ikmedia/blog/hero-image.jpeg"); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.texts {
+  text-align: center;
+  color: white;
+}
+.heading-text {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 70.4px;
+  margin: 120px 315px 30px 315px;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 70.4px;
+
+  max-width: 800px;
+}
+.heading-text2 {
+  margin: 16px 75px 16px 75px;
+  font-size: 26px;
+  font-weight: 100;
+}
+.heading-text3 {
+  margin: 0 126px 10px 126px;
+  font-weight: 100;
+  font-size: 19.2px;
+}
+.search-container {
+  float: right;
+  text-align: center;
+  margin-right: 25rem;
+  /* padding: 6rem 0; */
+}
+
+input {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width: 30rem;
+  padding: 1.5rem 0;
+}
+.search-container button {
+  float: right;
+  padding:1.03rem 0.83rem ;
+  font-size: 25px;
+  color: white;
+  margin-top: 8px;
+  margin-right: 16px;
+  width: 15rem;
+  border: none;
+  cursor: pointer;
+  background-color: #f40612;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-arrow-icon{
+    width: 35px;
+    height: 35px;
+    
+}

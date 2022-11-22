@@ -6,20 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix Web Landing Page</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="images/netflix_logo_icon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="images/netflix_logo_icon.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
-    <section class="hero-section">
-      <div class="navbar">
-        <div class="logo">
-            <img src="images/Netflix_Logo.png" alt="" class="logo-image">
+    <header>
+      <section class="hero-section">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images/Netflix_Logo.png" alt="" class="logo-image" />
+          </div>
+          <div class="signup">
+            <button class="signup-btn">Sign In</button>
+          </div>
         </div>
-        <div class="signup">
-          <button class="signup-btn">
-            Sign In
-          </button>
+        <div class="texts">
+          <h1 class="heading-text">Unlimited movies, TV shows, and more.</h1>
+          <h2 class="heading-text2">Watch anywhere. Cancel anytime.</h2>
+          <h3 class="heading-text3">
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </h3>
+          <div class="search-container">
+            <form>
+              <input type="text" placeholder="Email Address" name="search" />
+              <button type="submit">
+                Get Started
+                <img
+                  src="images/right-arrow.png"
+                  alt=""
+                  class="right-arrow-icon"
+                />
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </header>
   </body>
 </html>
